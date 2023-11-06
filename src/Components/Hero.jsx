@@ -3,25 +3,25 @@ import { styles } from '../style';
 import { ComputersCanvas } from '../canvas';
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto mb-200">
+    <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+        className={`${styles.paddingX} absolute inset-0 top-[70px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5 border-solid border-2 border-[#915eff] p-5">
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hello My Name Is <br /> <span className="text-[#915eff]">Alex</span>
+              Hello my name is <span className="text-[#915eff]">Alex</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white`}>
-              I`m Frontend Developer, Who love to make great <br className="sm:block hidden" />{' '}
-              applications and help people{' '}
+            <p className={`${styles.heroSubText} mt-10 text-white`}>
+              I`m Frontend Developer, Who love to make great <br className="sm:block hidden" />
+              applications and help people
             </p>
           </div>
         </div>
       </div>
-      <div className="sugar w-full h-[1000px] mt-150px static">
+      <div className="w-full h-full mt-150px static">
         <ComputersCanvas />
       </div>
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-1 bottom-3 w-full flex justify-center items-center">
         <a href="#about" >
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.dev
