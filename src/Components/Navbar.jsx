@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../style';
 import { navLinks } from '../Constants';
@@ -21,6 +21,7 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer">Alex Kaday</p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
+        <span className='text-white text-[18px] uppercase'>tel</span>
           {navLinks.map((item) => (
             <li
               key={item.id}

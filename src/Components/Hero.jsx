@@ -20,12 +20,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="Murchaka w-full h-1/2  relative top-1/3">
+      <div className="Murchaka w-full h-1/2  relative top-1/2 xl:top-1/3">
         <ComputersCanvas />
       </div>
 
       <div className="absolute xs:bottom-1 bottom-3 w-full flex justify-center items-center">
-        <a href="#about" >
+        <a href="#about" className='z-10'>
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.dev
               animate={{ y: [0, 24, 0] }}
