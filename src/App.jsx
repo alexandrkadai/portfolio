@@ -29,7 +29,7 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
-        <Footer />
+        
       </div>
     </BrowserRouter>
   );
