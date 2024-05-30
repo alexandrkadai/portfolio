@@ -1,17 +1,14 @@
-import { Fragment } from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-
-import { projects } from "../constants";
+import { projects } from '../Constants';
 import { styles } from '../style';
-import { github } from '../assets';
 import { ServiceWraper } from '../HOC';
 import { fadeIn, textVariant } from '../utils/motion';
 
 const Works = () => {
   return (
-    <Fragment>
+    <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubtext}>Recent Works</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
@@ -27,12 +24,12 @@ const Works = () => {
           other aspects. Feel free to explore them."
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((item, index) => (
-          <ProjectCard key={index} {...item} index={index}/>
+          <ProjectCard key={index} {...item} index={index} />
         ))}
       </div>
-    </Fragment>
+    </>
   );
 };
 

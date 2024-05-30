@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 
 const ExpirienceCard = ({ expierence }) => {
   return (
-    <Fragment>
+    <>
       <VerticalTimelineElement
         contentStyle={{ background: '#1d1836', color: '#fff' }}
         contentArrowStyle={{ border: '7px solid #232631' }}
@@ -25,7 +25,7 @@ const ExpirienceCard = ({ expierence }) => {
         ))}
         </ul>
         </VerticalTimelineElement >
-    </Fragment>
+    </>
   );
 };
 
